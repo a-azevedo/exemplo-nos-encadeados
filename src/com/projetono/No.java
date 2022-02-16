@@ -1,19 +1,19 @@
 package com.projetono;
 
-public class No {
-    private String conteudo;
+public class No<T> {
+    private T conteudo;
     private No proximoNo;
 
-    public No(String conteudo) {
+    public No(T conteudo) {
         this.conteudo = conteudo;
         this.proximoNo = null;
     }
 
-    public String getConteudo() {
+    public T getConteudo() {
         return conteudo;
     }
 
-    public void setConteudo(String conteudo) {
+    public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
 
@@ -23,12 +23,5 @@ public class No {
 
     public void setProximoNo(No proximoNo) {
         this.proximoNo = proximoNo;
-    }
-
-    @Override
-    public String toString() {
-        return "No{" +
-                "conteudo='" + conteudo + '\'' +
-                '}';
     }
 }
