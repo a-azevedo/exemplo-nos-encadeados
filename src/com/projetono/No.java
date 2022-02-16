@@ -24,4 +24,11 @@ public class No<T> {
     public void setProximoNo(No proximoNo) {
         this.proximoNo = proximoNo;
     }
+
+    @Override
+    public String toString() {
+        return "No{" +
+                "conteudo=" + conteudo +
+                '}';
+    }
 }

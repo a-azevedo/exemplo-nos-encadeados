@@ -9,9 +9,12 @@ public class Main {
         n2.setProximoNo(n3);
         No n4 = new No("Conteudo no4");
         n3.setProximoNo(n4);
+        No n5 = new No<Integer>(5);
+        n4.setProximoNo(n5);
 
         System.out.println(n1);
         System.out.println(n1.getProximoNo());
-        System.out.println(n1.getProximoNo().getProximoNo().getProximoNo().getProximoNo());
+        System.out.println(n5);
+        System.out.println(n1.getProximoNo().getProximoNo().getProximoNo().getProximoNo().getProximoNo());
     }
 }
