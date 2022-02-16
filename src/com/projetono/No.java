@@ -2,7 +2,7 @@ package com.projetono;
 
 public class No<T> {
     private T conteudo;
-    private No proximoNo;
+    private No<T> proximoNo;
 
     public No(T conteudo) {
         this.conteudo = conteudo;
